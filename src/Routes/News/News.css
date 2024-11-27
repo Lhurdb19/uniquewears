@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.news-con {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 100px;
+    margin: 100px auto;
+}
+@media screen and (max-width:896px) {
+    .news-con {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        gap: 20px;
+        padding: 0 10px;
+        margin: 100px auto;
+    } 
+}
+
+.user-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px 0;
+}
+
+@media screen and (max-width:896px) {
+    .user-card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+    }
+}
+
+.myuser {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgba(184, 182, 182, 0.2) ;
+}
+.myuser > h3 {
+    font-size: 16px;
+}
+
+.news-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.news-id {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgba(184, 182, 182, 0.2) ;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .news-id:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: all 0.3s ease-in-out;
+  }
+  @media screen and (max-width:896px) {
+    .myuser {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        background-color: rgba(184, 182, 182, 0.2) ;
+    }
+    .myuser > h3 {
+        font-size: 16px;
+    }
+    
+    .news-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .news-id {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+      }
+  }

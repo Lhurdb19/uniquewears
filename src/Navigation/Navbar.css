@@ -1,0 +1,318 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  background-color: rgba(6, 5, 5, 0.5);
+  z-index: 100;
+  position: fixed;
+  gap: 20px;
+  top: 0%;
+}
+
+.nav-container > a {
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.nav-container > .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-container > .nav-link > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-container > .toggle-menu {
+  display: none;
+}
+
+@media screen and (max-width: 896px) {
+  .nav-container {
+    padding: 10px;
+  }
+
+  .nav-container > .nav-link {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    top: 70px;
+    left: 0px;
+    transform: translateX(-100%);
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    gap: 10px;
+  }
+  .nav-container > .nav-link > a {
+    width: 100%;
+    /* border-bottom: 1px solid gray; */
+    color: black;
+  }
+
+  .nav-container > .nav-link.mobile.active {
+    transform: translateX(0%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-container > .toggle-menu {
+    display: block;
+    color: white;
+  }
+}
+
+.product-drop {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.product-drop > p {
+  cursor: pointer;
+}
+
+.product-drop > .icons {
+  font-size: 25px;
+  padding-top: 3px;
+}
+
+.product-drop > .product-card {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  background-color: #a6a3a3;
+  z-index: 100;
+  top: 72px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: 0px;
+  color: #000;
+}
+
+.product-drop > .product-card > a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  font-size: 14px;
+}
+
+.inner-product {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.inner-product > p {
+  cursor: pointer;
+}
+
+.inner-product > .icons {
+  font-size: 25px;
+  padding-top: 3px;
+}
+
+.inner-product > .inner-link {
+  display: flex;
+  flex-direction: column;
+  background-color: #a6a3a3;
+  color: #000;
+  width: 120px;
+}
+
+.inner-product > .inner-link > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px;
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-product-drop {
+  display: none;
+}
+
+@media screen and (max-width: 896px) {
+  .product-drop {
+    display: none;
+  }
+  .mobile-product-drop {
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .mobile-product-drop > span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-product-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .mobile-product-card > a {
+    text-decoration: none;
+    color: #423f3f;
+    font-size: 14px;
+    gap: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .inner-product {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 16px;
+  }
+
+  .inner-product > p {
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .inner-product > .icons {
+    font-size: 25px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .inner-product > .inner-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: -100px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    width: 200px;
+  }
+
+  .inner-product > .inner-link > a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.user {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.user > .user-icon {
+  cursor: pointer;
+}
+
+.user > .user-card {
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(32, 32, 32, 0.4);
+  gap: 10px;
+  top: 72px;
+  font-size: 11px;
+  padding: 10px;
+  position: fixed;
+  color: white;
+}
+
+.user-card > a {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+@media screen and (max-width: 896px) {
+  .user {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .user > .user-card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 10px;
+    font-size: 11px;
+    padding: 0px;
+    position: none;
+    color: #000;
+  }
+
+  .user-card > a {
+    display: flex;
+    color: #000;
+    font-size: 15px;
+  }
+}

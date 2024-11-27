@@ -1,0 +1,407 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Montserratlight;
+}
+
+
+.home-container {
+    width: 100%;
+    padding: 100px 0px;
+    position: relative;
+    background-color: #f7f1f1;
+    top: 0%;
+}
+
+.home-container > .autotype{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://s3.ap-southeast-2.amazonaws.com/ls-asset-service/ckg8u8tpb000i08ledhq47mva/ckg8u8tpb000j08leej6p53sn');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 600;
+    top: 0px;
+    display: flex;
+}
+
+.dropping-dot {
+    margin-top: 40%;
+    margin-left: -50%;
+    width: 25px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropping-dot > p {
+    width: 4px;
+    height: 4px;
+    border: 3px solid lightgray;
+    border-radius: 100%;
+    animation: drop 4s ease-in-out infinite forwards;
+}
+
+@keyframes drop {
+     10% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+@media screen and (max-width:896px) {
+    .home-container {
+        width: 100%;
+        padding:50px 0px;
+        margin-top: 0px;
+        /* padding: 0px; */
+        
+    }
+    .home-container > .autotype {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+    .dropping-dot {
+        margin-top: 80%;
+        margin-left: -40%;
+        border-radius: 30px;
+    }
+}
+
+.home-container > .modal {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+    margin-top: 100px;
+}
+.modal > .switch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    position: sticky;
+    top: 20%;
+}
+
+.switch > button {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    color: #0b0101;
+    font-size: 13px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: rgba(56, 52, 52, 0.3);
+}
+
+.switch > button:focus {
+    background-color: #1c2e3b;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+.switch > button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.switch-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media screen and (max-width:896px) {
+    .home-container > .modal {
+        margin-top: 50px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .modal > .switch {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .switch > button {
+        width: 100px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border: 1px solid black;
+        font-size: 13px;
+        padding: 2px;
+    }
+
+    .modal > .switch > button:focus {
+        background-color: aquamarine;
+        color: #fff;
+        border: none;
+        font-weight: 500;
+    }
+}
+
+
+.python-info {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.python-info > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.python-info > p {
+    padding-right: 50px;
+}
+
+.python-info > ul {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    list-style: disc;
+}
+
+.python-info > ul > li {
+    list-style: disc;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 15px;
+    line-height: 1.1rem;
+    padding-left: -50px;
+}
+
+@media screen and (max-width:896px) {
+    .python-info {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .python-info > p {
+        padding-right: 10px;
+    }    
+
+    .python-info > ul {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+.sql-info {
+    width: 100%;
+    padding: 10px 50px;
+    padding-left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.sql-info > img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:896px) {
+    .sql-info {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.java-info {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.java-info > img {
+    width: 400px;
+    height: 220px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:896px) {
+    .java-info {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .java-info > img {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+.julia-info {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.julia-info > img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:896px) {
+    .julia-info {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.javascript-info {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.javascript-info > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:896px) {
+    .javascript-info {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.ccc-info {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.ccc-info > img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:896px) {
+    .ccc-info {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.swift-info {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.swift-info > img {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:896px) {
+    .swift-info {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.r-info {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.5rem;
+    gap: 20px;
+}
+
+.r-info > img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:896px) {
+    .r-info {
+        width: 100%;
+        padding: 0px;
+    }
+}

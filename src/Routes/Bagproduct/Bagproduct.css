@@ -1,0 +1,151 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.bag-product {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    gap: 20px;
+}
+
+.bag-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: red;
+}
+
+.slider {
+    width: 100%;
+    padding: 30px 0px;
+    margin-bottom: 20px;
+    
+}
+
+ .bag-slider {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.slider p {
+    font-size: 15px;
+}
+
+@media screen and (max-width:896px) {
+    .bag-product {
+        width: 100%;
+        padding:80px 10px;
+    }
+}
+
+.overlay-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    top: 0%;
+    position: fixed;
+    z-index: 101;
+    padding: 30px;
+    background-color: rgba(32, 32, 32, 0.5);
+}
+@media screen and (max-width:896px) {
+    .overlay-container {
+        width: 100%;
+        padding: 70px 10px;
+    }
+}
+
+.overlay-card {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding-bottom: 10px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.overlay-card > span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (max-width:896px) {
+    .overlay-card {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 20px;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .overlay-card > span {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+.overlay-card > span > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-card > .bag-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.overlay-card > .bag-btn > button {
+    width: 50px;
+    padding: 3px 5px;
+}
+
+
+.view-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.view-button > button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+}

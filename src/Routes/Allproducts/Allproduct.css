@@ -1,0 +1,464 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.allproduct {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 100px;
+}
+
+@media screen and (max-width:896px) {
+    .allproduct {
+        width: 100%;
+        min-height: fit-content;
+        gap: 50px;
+        padding: 0%;
+    }
+}
+
+.bags-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 100px;
+    gap: 40px;
+}
+
+.bags-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.bags-info > .bag-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: rgba(184, 182, 182, 0.2) ;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bag-info:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: all 0.3s ease-in-out;
+  }
+
+.bag-info > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.bag-info > h4 {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.bag-info > p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:896px) {
+    .bags-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0px;
+        gap: 40px;
+    }
+    
+    .bags-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .bags-info > .bag-info {
+        width: 100%;
+        display: flex;
+      }
+    
+    .bag-info > img {
+        width: 100%;
+        height: 300px;
+    }
+    .bag-info > h4 {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .bag-info > p {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.clothes-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 100px;
+    gap: 40px;
+}
+
+.clothes-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.clothes-info > .clothe-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: rgba(184, 182, 182, 0.2) ;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .clothe-info:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: all 0.3s ease-in-out;
+  }
+
+.clothe-info > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.clothe-info > h4 {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.clothe-info > p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:896px) {
+    .clothes-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0px;
+        gap: 40px;
+    }
+    
+    .clothes-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .clothes-info > .clothe-info {
+        width: 100%;
+        display: flex;
+      }
+    
+    .clothe-info > img {
+        width: 100%;
+        height: 300px;
+    }
+    .clothe-info > h4 {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .clothe-info > p {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.baby-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 100px;
+    gap: 40px;
+}
+
+.babies-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.babies-info > .baby-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: rgba(184, 182, 182, 0.2) ;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .baby-info:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: all 0.3s ease-in-out;
+  }
+
+.baby-info > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.baby-info > h4 {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.baby-info > p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:896px) {
+    .baby-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0px;
+        gap: 40px;
+    }
+    
+    .babies-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .babies-info > .baby-info {
+        width: 100%;
+        display: flex;
+      }
+    
+    .baby-info > img {
+        width: 100%;
+        height: 300px;
+    }
+    .baby-info > h4 {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .baby-info > p {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.shoes-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 100px;
+    gap: 40px;
+}
+
+.shoes-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.shoes-info > .shoe-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: rgba(184, 182, 182, 0.2) ;
+    transition: all 0.3s ease-in-out;
+  }
+
+.shoe-info:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: all 0.3s ease-in-out;
+}
+
+.shoe-info > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.shoe-info > h4 {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.shoe-info > p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:896px) {
+    .shoes-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0px;
+        gap: 40px;
+    }
+    
+    .shoes-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .shoes-info > .shoe-info {
+        width: 100%;
+        display: flex;
+      }
+    
+    .shoe-info > img {
+        width: 100%;
+        height: 300px;
+    }
+    .shoe-info > h4 {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .shoe-info > p {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.wrist-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 100px;
+    gap: 40px;
+}
+
+.wristwatches-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.wristwatches-info > .wristwatch-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: rgba(184, 182, 182, 0.2) ;
+    transition: all 0.3s ease-in-out;
+  }
+
+.wristwatch-info:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: all 0.3s ease-in-out;
+}
+
+.wristwatch-info > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.wristwatch-info > h4 {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.wristwatch-info > p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:896px) {
+    .wrist-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0px;
+        gap: 40px;
+    }
+    
+    .wristwatches-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .wristwatches-info > .wristwatch-info {
+        width: 100%;
+        display: flex;
+      }
+    
+      .wristwatch-info > img {
+        width: 100%;
+        height: 300px;
+    }
+    .wristwatch-info > h4 {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .wristwatch-info > p {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}

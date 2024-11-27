@@ -1,0 +1,183 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.cloth-product {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.clothe-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width:896px) {
+    .cloth-product {
+        width: 100%;
+        padding: 50px 10px;
+    }
+}
+
+.clothe-slider {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clothe {
+    width: 100%;
+    height: 370px;
+    display: flex;
+    gap: 20px;
+}
+
+.clothe > h3 {
+    font-size: 20px;
+}
+
+@media screen and (max-width:896px) {
+    .clothe > h3 {
+        font-size: 18px;
+        padding-left: 20px;
+    }    
+}
+
+.clothe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cloth-overlay {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 101;
+    top: 0%;
+    padding-top: 70px;
+    background-color: rgba(32, 32, 32, 0.5);
+}
+@media screen and (max-width:896px) {
+    .cloth-overlay {
+        width: 100%;
+        min-height: 100vh;
+        padding-top: 0px;
+        margin: 0%;
+    }
+}
+
+.cloth-card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width:896px) {
+    .cloth-card {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.cloth-card > span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cloth-card > span > img {
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:896px) {
+    .cloth-card > span {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .cloth-card > span > p {
+        font-size: 19px;
+    }
+    
+    .cloth-card > span > img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.cloth-card > .bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 0px;
+}
+
+.cloth-card > .bttn > button {
+    width: 50px;
+    padding: 3px 5px;
+}
+@media screen and (max-width:896px) {
+    .cloth-card > .bttn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding-top: 0px;
+    }
+    
+    .cloth-card > .bttn > button {
+        width: 50px;
+        padding: 3px 5px;
+    }
+}
+
+.view-more-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.view-more-button > button {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+}
