@@ -7,8 +7,8 @@
 
 .about-container {
     width: 100%;
-    /* background-color: purple; */
-    padding: 100px;
+    min-height: 100vh;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,4 +165,24 @@
 .slick-dots > li.slick-active > button {
     border-radius: 50%;
     background-color: lightgray;
+}
+
+
+.about-cloth {
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.about-cloth > .about-display {
+    width: 420px;
+    height: 400px;
+    display: flex;
+}
+.about-cloth > .about {
+    width: 420px;
+    height: 400px;
+    display: flex;
 }

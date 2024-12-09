@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Clothproduct.css';
 import MultipleItems from '../Slider/clotheslider';
 import { useNavigate } from 'react-router-dom';
+import PreviousNextMethods from '../Slider/Descriptionslider';
+
 
 export default function Clothproduct() {
   const [viewProduct, setViewProduct] = useState(false);
@@ -10,7 +12,18 @@ export default function Clothproduct() {
   return (
     <>
     <div className='cloth-product'>
+      <div className="cloth-description">
+
+      <div className="cloth-display">
       <MultipleItems/>
+      </div>
+
+      <div className="description-display">
+      <PreviousNextMethods/>
+      </div>
+
+      </div>
+
 
       {viewProduct && (
         <div className="cloth-overlay">

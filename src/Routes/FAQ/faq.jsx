@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import './Faq.css';
+import PreviousNextMethods from '../Slider/Descriptionslider';
 
 function Faq() {
 

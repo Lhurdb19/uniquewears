@@ -10,7 +10,7 @@ export default function Employee() {
         const {Name, Age, PhoneNumber, Status, Position, BasicSalary,  ImageUrl} = employee;
 
         return (
-            <div className="info">
+            <div className="employee-info">
                 <h2>{Name}</h2>
                 <p>{Age}</p>
                 <p>{PhoneNumber}</p>

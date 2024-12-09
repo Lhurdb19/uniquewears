@@ -15,13 +15,55 @@
     gap: 100px;
 }
 
+.cloth-product > .cloth-description {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.cloth-description > .cloth-display {
+    width: 420px;
+    height: 400px;
+    display: flex;
+}
+.cloth-description > .description-display {
+    width: 420px;
+    height: 400px;
+    display: flex;
+}
+
+@media screen and (max-width:896px) {
+    .cloth-product > .cloth-description {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 70px;
+    }
+    
+    .cloth-description > .cloth-display {
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .cloth-description > .description-display {
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+}
+
 .clothe-slider-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     background-color: whitesmoke;
 }
 
@@ -42,7 +84,7 @@
 
 .clothe {
     width: 100%;
-    height: 370px;
+    height: 400px;
     display: flex;
     gap: 20px;
 }

@@ -192,7 +192,7 @@ body {
     gap: 20px;
   }
   
-  .info {
+  .employee-info {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -203,23 +203,23 @@ body {
     transition: all 0.3s ease-in-out;
   }
 
-  .info:hover {
+  .employee-info:hover {
     background-color: white;
     box-shadow: 1px 1px 1px 1px lightgray;
     transition: all 0.3s ease-in-out;
   }
   
-  .info > h2 {
+  .employee-info > h2 {
     font-size: 16px;
     padding-left: 10px;
     padding-bottom: 10px;
   }
-  .info > p {
+  .employee-info > p {
     font-size: 14px;
     padding-left: 10px;
   }
   
-  .info > img {
+  .employee-info > img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -234,7 +234,7 @@ body {
       gap: 20px;
     }
     
-    .info > img {
+    .employee-info > img {
       width: 100%;
       height: 400px;
       object-fit: cover;
@@ -269,4 +269,115 @@ svg text {
 .wrapper {
   width: 10px;
   height: 10px;
+}
+
+
+.faq-container > .slider-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -300px;
+}
+
+.prevnext-button {
+  width: 120px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 520px;
+  bottom: 200px;
+  gap: 20px;
+  padding: 10px;
+  background-color: #000;
+  border-radius: 10px;
+}
+.prevnext-button > button {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 17px;
+}
+
+.describe {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.describe > .text {
+  display: flex;
+  gap: 15px;
+  padding: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.describe > .text > h3 {
+  font-size: 35px;
+  color: #923CE2;
+}
+.describe > .text > p:nth-child(2) {
+  color: gray;
+}
+
+@media screen and (max-width:896px) {
+  .faq-container > .slider-container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .settings {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  
+  .prevnext-button {
+    display: none;
+  }
+  .prevnext-button > button {
+    display: none;
+  }
+  
+  .describe {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .describe > .text {
+    display: flex;
+    gap: 15px;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .describe > .text > h3 {
+    font-size: 25px;
+    color: #923CE2;
+  }
 }
